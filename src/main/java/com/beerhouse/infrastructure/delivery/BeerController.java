@@ -9,11 +9,7 @@ import org.springframework.web.bind.annotation.*;
 public class BeerController {
 
 
-    private final BeerService service;
-
-    public BeerController(BeerService service) {
-        this.service = service;
-    }
+    private BeerService service;
 
     @PostMapping("/beers")
     public ResponseEntity<Object> create() {
